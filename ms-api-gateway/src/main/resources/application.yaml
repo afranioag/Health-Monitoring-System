@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-geteway
+  cloud:
+    gateway:
+      routes:
+        - id: hms-patient
+          uri: lb://MS-PATIENTS
+          predicates:
+            - Path=/ms-patient/**
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://localhost:8761/eureka/'
+  instance:
+    hostname: localhost
