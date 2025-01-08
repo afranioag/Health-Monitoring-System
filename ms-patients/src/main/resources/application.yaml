@@ -6,8 +6,6 @@ server:
 spring:
   application:
     name: ms-patients
-
-
   datasource:
     url: jdbc:postgresql://localhost:5432/health-monitoring-system
     username: postgres
@@ -24,3 +22,10 @@ spring:
   output:
     ansi:
       enabled: Always
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://localhost:8761/eureka'
+  instance:
+    hostname: localhost
