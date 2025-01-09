@@ -1,0 +1,31 @@
+server:
+  port: 8083
+  servlet:
+    context-path: '/ms-device/'
+
+spring:
+  application:
+    name: ms-devices
+  datasource:
+    url: jdbc:postgresql://localhost:5432/health-monitoring-system
+    username: postgres
+    password: Hms@1234
+  jpa:
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      jdbc:
+        lob.non-contextual-creation: true
+    properties:
+      hibernate:
+        show_sql: true
+  output:
+    ansi:
+      enabled: Always
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://localhost:8761/eureka'
+  instance:
+    hostname: localhost
