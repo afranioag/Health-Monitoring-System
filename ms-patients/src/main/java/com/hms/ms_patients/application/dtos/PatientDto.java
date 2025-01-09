@@ -1,4 +1,4 @@
-package com.hms.ms_patients.model.dtos;
+package com.hms.ms_patients.application.dtos;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.hms.ms_patients.model.entities.Patient;

@@ -1,6 +1,7 @@
-package com.hms.ms_patients.application;
+package com.hms.ms_patients.application.controllers;
 
-import com.hms.ms_patients.model.dtos.PatientDto;
+import com.hms.ms_patients.application.services.PatientService;
+import com.hms.ms_patients.application.dtos.PatientDto;
 import com.hms.ms_patients.model.entities.Patient;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

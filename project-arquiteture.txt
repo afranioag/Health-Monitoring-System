@@ -1,0 +1,21 @@
+/remote-health-monitor
+├── README.md (documentação geral)
+├── services/
+│   ├── java/
+│   │   ├── ms-devices/ (microserviço em Java/Spring Boot)
+│   │   ├── ms-patients/
+│   │   └── ms-gateway/
+│   ├── python/
+│   │   ├── ms-alerts/ (microserviço em Python/Flask)
+│   │   ├── ms-notifications/
+│   │   └── ms-simulator/
+├── deployment/
+│   ├── docker-compose.yml (para desenvolvimento local)
+│   ├── aws/ (scripts de deploy para AWS)
+│   ├── heroku/ (configurações de deploy para Heroku)
+│   ├── kubernetes/ (manifests para Kubernetes, se necessário no futuro)
+├── infra/
+│   ├── rabbitmq/ (configuração local para RabbitMQ)
+│   ├── postgres/ (configuração local para banco de dados)
+│   └── firebase/ (configuração para mensagens em tempo real)
+└── .github/ (workflows para CI/CD separados por serviços)

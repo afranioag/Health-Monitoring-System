@@ -1,6 +1,6 @@
-package com.hms.ms_patients.application;
+package com.hms.ms_patients.application.services;
 
-import com.hms.ms_patients.model.dtos.PatientDto;
+import com.hms.ms_patients.application.dtos.PatientDto;
 import com.hms.ms_patients.model.entities.Patient;
 import com.hms.ms_patients.repositories.PatientRepository;
 import jakarta.transaction.Transactional;
