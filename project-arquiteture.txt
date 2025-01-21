@@ -2,17 +2,18 @@
 ├── README.md (documentação geral)
 ├── services/
 │   ├── java/
-│   │   ├── ms-devices/ (microserviço em Java/Spring Boot)
+│   │   ├── ms-users/
+│   │   ├── ms-devices/
 │   │   ├── ms-patients/
+│   │   ├── ms-registry/
 │   │   └── ms-gateway/
 │   ├── python/
-│   │   ├── ms-alerts/ (microserviço em Python/Flask)
 │   │   ├── ms-notifications/
-│   │   └── ms-simulator/
+│   │   └── ms-simulator-device/
 ├── deployment/
 │   ├── docker-compose.yml (para desenvolvimento local)
-│   ├── aws/ (scripts de deploy para AWS)
-│   ├── heroku/ (configurações de deploy para Heroku)
+│   ├── aws/ AINDA VALIDANDO SE SERA POSSIVEL
+│   ├── heroku/
 │   ├── kubernetes/ (manifests para Kubernetes, se necessário no futuro)
 ├── infra/
 │   ├── rabbitmq/ (configuração local para RabbitMQ)

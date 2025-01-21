@@ -28,3 +28,11 @@ spring:
         defaultZone: 'http://localhost:8761/eureka'
     instance:
       hostname: localhost
+
+#  Configuracao do BROKER
+  rabbitmq:
+    host: jackal.rmq.cloudamqp.com
+    port: 5672
+    username: rxhkchqs
+    password: w-e2eaFKg-hkRskiJ0Hw_E1k1kJerniG
+    virtual-host: rxhkchqs
