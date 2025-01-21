@@ -1,8 +1,8 @@
 package com.hms.ms_patients.application.dtos;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.hms.ms_patients.model.entities.Patient;
-import com.hms.ms_patients.model.enums.Gender;
+import com.hms.ms_patients.domain.model.entities.Patient;
+import com.hms.ms_patients.domain.model.enums.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

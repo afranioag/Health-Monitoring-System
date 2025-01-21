@@ -1,7 +1,7 @@
-package com.hms.ms_patients.model.entities;
+package com.hms.ms_patients.domain.model.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.hms.ms_patients.model.enums.Gender;
+import com.hms.ms_patients.domain.model.enums.Gender;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -42,7 +42,10 @@ public class Patient implements Serializable {
     @JsonFormat(pattern =  "yyyy-MM-dd")
     private LocalDate birthdate;
 
-    @Column(unique = true, length = 20)
+    @Column(length = 20)
     private String phone;
 
+    @JoinColumn(nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    private BasicUser basicUser;
 }

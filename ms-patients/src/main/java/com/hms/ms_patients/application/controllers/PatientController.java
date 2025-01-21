@@ -2,7 +2,8 @@ package com.hms.ms_patients.application.controllers;
 
 import com.hms.ms_patients.application.services.PatientService;
 import com.hms.ms_patients.application.dtos.PatientDto;
-import com.hms.ms_patients.model.entities.Patient;
+import com.hms.ms_patients.domain.model.entities.Patient;
+import com.hms.ms_patients.domain.security.anotations.Authenticated;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,7 @@ public class PatientController {
     }
 
     @GetMapping(value = "/{id}")
+    @Authenticated(value = "ADMIN")
     public ResponseEntity<Patient> getPatient(@PathVariable UUID id) {
         return ResponseEntity.ok(patientService.getPatient(id));
     }

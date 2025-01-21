@@ -1,4 +1,4 @@
-package com.hms.ms_patients.model.enums;
+package com.hms.ms_patients.domain.model.enums;
 
 import lombok.Getter;
 

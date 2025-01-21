@@ -1,8 +1,8 @@
 package com.hms.ms_patients.application.services;
 
 import com.hms.ms_patients.application.dtos.PatientDto;
-import com.hms.ms_patients.model.entities.Patient;
-import com.hms.ms_patients.repositories.PatientRepository;
+import com.hms.ms_patients.domain.model.entities.Patient;
+import com.hms.ms_patients.domain.repositories.PatientRepository;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
